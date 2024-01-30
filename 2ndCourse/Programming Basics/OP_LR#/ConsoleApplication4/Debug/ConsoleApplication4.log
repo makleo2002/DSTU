@@ -1,0 +1,8 @@
+﻿  ConsoleApplication4.cpp
+C:\Users\Максим\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(28,13): warning C4244: инициализация: преобразование "_Ty" в "int", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\Максим\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(31,22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  ConsoleApplication4.vcxproj -> C:\Users\Максим\source\repos\ConsoleApplication4\Debug\ConsoleApplication4.exe

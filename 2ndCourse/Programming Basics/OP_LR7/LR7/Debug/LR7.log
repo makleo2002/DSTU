@@ -1,0 +1,13 @@
+﻿  LR7.cpp
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(23,1): error C2440: =: невозможно преобразовать "void" в "StackElem *"
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(23,26): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(32,33): error C2440: инициализация: невозможно преобразовать "void" в "StackElem *"
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(32,18): message : Выражение, имеющее тип void, нельзя преобразовать в другой тип
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(46,10): error C2065: p1: необъявленный идентификатор
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(46,14): error C2065: p2: необъявленный идентификатор
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(50,13): error C2065: p1: необъявленный идентификатор
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(53,17): error C2065: p1: необъявленный идентификатор
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(55,13): error C2065: p2: необъявленный идентификатор
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(55,21): error C2065: p1: необъявленный идентификатор
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(56,13): error C2065: p1: необъявленный идентификатор
+C:\Users\Максим\source\repos\LR7\LR7\LR7.cpp(59,37): error C2065: p2: необъявленный идентификатор

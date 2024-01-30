@@ -1,0 +1,94 @@
+@startuml
+
+title __Graph's Class Diagram__\n
+
+
+
+namespace com.company {
+namespace Graph {
+class com.company.Graph.Graph{
+    -height: int
+    -width: int
+    -axis :  ArrayList<Axis>
+    -grid : Grid
+    -curves : ArrayList<Curve>
+    -legend : Legend
+    +getAxis()
+    +getGrid()
+    +getCurves()
+    +getLegend()
+    +Graph()
+    +Draw(int a, int b)
+    +addCurve(double [] x,double[] y,String name,String color)
+    +changeCurve(int number,double [] x,double[] y,String name,String color)
+    +delCurve(int number)
+    +addAxis(int a,int b,int step)
+    +changeAxis(int number,int a,int b,double step)
+    +delAxis(int number)
+    +changeStep(double StepX,double StepY)
+}
+}
+}
+namespace com.company {
+namespace Graph {
+class com.company.Graph.Axis{
+   -a : double
+   -b : double
+   -step : double
+   +getA()
+   +getB()
+   +getStep()
+   +Axis()
+   +Axis(double start,double end,double mystep)
+   +ChangeAxis(double start,double end,double mystep)
+   +show()
+}
+}
+}
+
+namespace com.company {
+namespace Graph {
+class com.company.Graph.Curve{
+   -x : double[]
+   -y : double[]
+   -name : String
+   -color : String
+   +Curve()
+   +String getName()
+   +String getColor()
+   +Curve(double x1[],double y1[],String name1,String color1)
+   +Tab(int a,int b)
+}
+}
+}
+
+namespace com.company {
+namespace Graph {
+class com.company.Graph.Grid{
+   -steps : ArrayList<Double>
+   +Grid()
+   +Grid(double StepX,double StepY)
+   +Steps()
+   +ChangeGrid(double StepX,double StepY)
+   +show()
+}
+}
+}
+
+namespace com.company {
+namespace Graph {
+class com.company.Graph.Legend {
+   -legendlist : ArrayList<String>
+   +getLegendlist()
+   +AddLegend(Curve curve)
+   +show()
+}
+}
+}
+
+com.company.Graph.Graph o-- com.company.Graph.Axis : axis
+com.company.Graph.Graph o-- com.company.Graph.Curve : curves
+com.company.Graph.Graph o-- com.company.Graph.Grid : grid
+com.company.Graph.Graph o-- com.company.Graph.Legend : legend
+
+@enduml

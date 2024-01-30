@@ -1,0 +1,12 @@
+@startuml
+
+title __COMPANY's Class Diagram__\n
+
+  namespace com.company {
+    class com.company.Main {
+        {static} + main()
+    }
+  }
+
+
+@enduml
