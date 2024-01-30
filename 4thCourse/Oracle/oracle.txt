@@ -1,0 +1,778 @@
+1-2 лаба:
+  CREATE TABLE "DB_USER"."COUPLE" 
+   (	"ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"NAME" VARCHAR2(100 BYTE), 
+	"TYPE" VARCHAR2(20 BYTE), 
+	"TEACHER" NUMBER(*,0), 
+	 CONSTRAINT "COUPLE_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE, 
+	 CONSTRAINT "COUPLE_FK" FOREIGN KEY ("TEACHER")
+	  REFERENCES "DB_USER"."EMPLOYEE" ("ID") ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+
+  CREATE TABLE "DB_USER"."DEPARTMENT" 
+   (	"ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"NAME" VARCHAR2(200 BYTE), 
+	"FACULTY_ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"DEPHEAD" NUMBER(*,0) NOT NULL ENABLE, 
+	 CONSTRAINT "DEPARTMENT_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE, 
+	 CONSTRAINT "DEP_FK" FOREIGN KEY ("FACULTY_ID")
+	  REFERENCES "DB_USER"."FACULTY" ("ID") ENABLE, 
+	 CONSTRAINT "DEP_FK1" FOREIGN KEY ("DEPHEAD")
+	  REFERENCES "DB_USER"."EMPLOYEE" ("ID") ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+
+  CREATE TABLE "DB_USER"."EMPLOYEE" 
+   (	"ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"FIRSTNAME" VARCHAR2(20 BYTE), 
+	"LASTNAME" VARCHAR2(30 BYTE), 
+	"SURNAME" VARCHAR2(30 BYTE), 
+	"POSITION" VARCHAR2(40 BYTE), 
+	 CONSTRAINT "EMPLOYEE_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+
+  CREATE TABLE "DB_USER"."FACULTY" 
+   (	"ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"NAME" VARCHAR2(300 BYTE), 
+	"DEAN" NUMBER(*,0) NOT NULL ENABLE, 
+	 CONSTRAINT "FACULTY_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE, 
+	 CONSTRAINT "FACULTY_FK" FOREIGN KEY ("DEAN")
+	  REFERENCES "DB_USER"."EMPLOYEE" ("ID") ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+
+  CREATE TABLE "DB_USER"."GROUPP" 
+   (	"ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"NAME" VARCHAR2(20 BYTE), 
+	"DEP_ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"SPEC_ID" NUMBER(*,0) NOT NULL ENABLE, 
+	 CONSTRAINT "GROUPP_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE, 
+	 CONSTRAINT "GROUPP_FK" FOREIGN KEY ("DEP_ID")
+	  REFERENCES "DB_USER"."DEPARTMENT" ("ID") ENABLE, 
+	 CONSTRAINT "GROUPP_FK1" FOREIGN KEY ("SPEC_ID")
+	  REFERENCES "DB_USER"."SPECIALITY" ("ID") ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+
+  CREATE TABLE "DB_USER"."JOURNAL" 
+   (	"STUDENT_ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"COUPLE_ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"GRADE" NUMBER(*,0) NOT NULL ENABLE, 
+	 CONSTRAINT "JOURNAL_FK" FOREIGN KEY ("STUDENT_ID")
+	  REFERENCES "DB_USER"."STUDENT" ("ID") ENABLE, 
+	 CONSTRAINT "JOURNAL_FK1" FOREIGN KEY ("COUPLE_ID")
+	  REFERENCES "DB_USER"."COUPLE" ("ID") ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+
+  CREATE TABLE "DB_USER"."SPECIALITY" 
+   (	"ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"NAME" VARCHAR2(150 BYTE), 
+	 CONSTRAINT "SPECIALITY_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+  CREATE TABLE "DB_USER"."STUDENT" 
+   (	"ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"FIRSTNAME" VARCHAR2(20 BYTE), 
+	"LASTNAME" VARCHAR2(30 BYTE), 
+	"SURNAME" VARCHAR2(30 BYTE), 
+	"GROUP_ID" NUMBER(*,0) NOT NULL ENABLE, 
+	"STUDENTCARD" NUMBER NOT NULL ENABLE, 
+	 CONSTRAINT "STUDENT_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE, 
+	 CONSTRAINT "STUDENT_FK" FOREIGN KEY ("GROUP_ID")
+	  REFERENCES "DB_USER"."GROUPP" ("ID") ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+create or replace NONEDITIONABLE PROCEDURE course_translation(cur_group VARCHAR2)
+IS
+  current_course NUMBER;
+  new_group VARCHAR2(30);
+BEGIN
+  -- Получаем текущий курс для указанной группы
+  SELECT REGEXP_SUBSTR(cur_group, '\d') INTO current_course
+  FROM dual;
+
+  -- Увеличиваем курс на 1
+  current_course := current_course + 1;
+  -- Формируем новое название группы с учетом нового курса
+  new_group := REGEXP_REPLACE(cur_group, REGEXP_SUBSTR(cur_group, '\d'),current_course);
+  DBMS_OUTPUT.PUT_LINE(new_group);
+
+     IF current_course = 5 THEN
+     UPDATE groupp SET name = ' ' WHERE name = cur_group;
+     DBMS_OUTPUT.PUT_LINE('Группа ' || cur_group || ' переведена на 5 курс и не имеет названия.');
+     ELSIF current_course < 5  THEN
+     UPDATE groupp SET name = new_group WHERE name = cur_group;
+     DBMS_OUTPUT.PUT_LINE('Группа ' || cur_group || ' переведена на следующий курс и теперь называется ' || new_group);
+     ELSE
+       DBMS_OUTPUT.PUT_LINE('Ошибка: Не найдены данные для группы.');
+     END IF;
+     
+  EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('Ошибка: Не найдена группа.');
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Ошибка: Произошла ошибка при выполнении процедуры.');
+     
+END;
+
+create or replace NONEDITIONABLE PROCEDURE group_translation (student_id NUMBER, new_group VARCHAR2)
+IS
+  current_course NUMBER;
+  next_course NUMBER;
+  new_group_id NUMBER;
+BEGIN
+  -- Получаем текущую группу и курс студента
+  SELECT REGEXP_SUBSTR(g.name, '\d') INTO current_course
+  FROM student s
+  JOIN groupp g ON s.group_id = g.id
+  WHERE s.id = student_id;
+
+  -- Получаем курс новой группы
+  SELECT REGEXP_SUBSTR(new_group, '\d') INTO next_course
+  FROM groupp
+  WHERE name = new_group;
+
+  -- Получаем ID новой группы
+  SELECT id INTO new_group_id
+  FROM groupp
+  WHERE name = new_group;
+
+  -- Проверяем, находятся ли группы на одном курсе
+  IF current_course = next_course THEN
+    -- Обновляем группу студента
+    UPDATE student SET group_id = new_group_id WHERE id = student_id;
+    DBMS_OUTPUT.PUT_LINE('Студент успешно переведен в новую группу.');
+  ELSE
+    DBMS_OUTPUT.PUT_LINE('Ошибка: Группы находятся на разных курсах.');
+  END IF;
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('Ошибка: Не найдены данные для студента или группы.');
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Ошибка: Произошла ошибка при выполнении процедуры.');
+END;
+
+create or replace NONEDITIONABLE PROCEDURE print_debtors(
+  cur_group VARCHAR2,
+  min_grade NUMBER
+)
+IS
+BEGIN
+  FOR student_record IN (
+    SELECT s.lastname
+    FROM student s
+    JOIN journal j ON s.id = j.student_id
+    WHERE s.group_id = (
+      SELECT id
+      FROM groupp
+      WHERE name = cur_group
+    ) AND j.grade = 2
+    GROUP BY s.lastname
+    HAVING COUNT(*) > min_grade
+  )
+  LOOP
+    DBMS_OUTPUT.PUT_LINE('Фамилия задолжника: ' || student_record.lastname);
+  END LOOP;
+END;
+
+create or replace NONEDITIONABLE PROCEDURE print_debtors_in_group(
+  cur_group VARCHAR2,
+  min_grade NUMBER
+)
+IS
+BEGIN
+  FOR student_record IN (
+    SELECT s.lastname
+    FROM "DB_USER"."STUDENT" s
+    JOIN "DB_USER"."JOURNAL" j ON s.id = j.student_id
+    WHERE s.group_id = (
+      SELECT id
+      FROM "DB_USER"."GROUPP"
+      WHERE "NAME" = cur_group
+    ) AND j.grade = 2
+    GROUP BY s.lastname
+    HAVING COUNT(*) > min_grade
+  )
+  LOOP
+    DBMS_OUTPUT.PUT_LINE('Фамилия задолжника: ' || student_record.lastname);
+  END LOOP;
+END;
+
+3-4 Лабы:
+
+
+  CREATE TABLE "USER1"."GENRE" 
+   (	"ID" NUMBER NOT NULL ENABLE, 
+	"NAME" VARCHAR2(55 BYTE) NOT NULL ENABLE, 
+	 CONSTRAINT "GENRE_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  TABLESPACE "USERS"  ENABLE
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+
+
+  CREATE TABLE "USER1"."PASSWORD_CHANGE_AUDIT" 
+   (	"AUDIT_ID" NUMBER, 
+	"CHANGE_DATE" DATE, 
+	"USERNAME" VARCHAR2(100 BYTE), 
+	 PRIMARY KEY ("AUDIT_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "USERS"  ENABLE
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."EMAIL_NOTIFICATION_TRIGGER" 
+AFTER INSERT ON password_change_audit
+FOR EACH ROW
+DECLARE
+    v_admin_email VARCHAR2(100) := 'makleo2002@mail.ru'; --  адрес администратора
+BEGIN
+    UTL_MAIL.SEND(
+        sender    => 'makleo2002@gmail.com', --  адрес электронной почты пользователя
+        recipients => v_admin_email,
+        subject   => 'Password Change Notification',
+        message   => 'User ID: ' || :NEW.user_id || ' has changed their password. Change Date: ' || TO_CHAR(:NEW.change_date, 'DD-MON-YYYY HH24:MI:SS')
+    );
+END;
+/
+ALTER TRIGGER "USER1"."EMAIL_NOTIFICATION_TRIGGER" ENABLE;
+
+
+  CREATE TABLE "USER1"."PRODUCT" 
+   (	"ID" NUMBER(*,0) DEFAULT "USER1"."PRODUCT_SEQUENCE"."NEXTVAL" NOT NULL ENABLE, 
+	"NAME" VARCHAR2(80 BYTE) NOT NULL ENABLE, 
+	"GROUP_ID" NUMBER(*,0) DEFAULT 0 NOT NULL ENABLE, 
+	"ENTRY_PRICE" NUMBER DEFAULT 0, 
+	"RETAIL_PRICE" NUMBER DEFAULT 0, 
+	"COUNT" NUMBER(*,0) DEFAULT 0 NOT NULL ENABLE, 
+	 CONSTRAINT "PRODUCT_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE, 
+	 CONSTRAINT "PRODUCT_FK1" FOREIGN KEY ("GROUP_ID")
+	  REFERENCES "USER1"."PRODUCT_GROUP" ("ID") ON DELETE CASCADE ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."UPDATE_RETAIL_PRICE" 
+BEFORE INSERT OR UPDATE OF ENTRY_PRICE ON product
+FOR EACH ROW
+BEGIN
+  DECLARE
+    v_markup product_group.markup%TYPE;
+  BEGIN
+    -- Получаем наценку на группу товара
+    SELECT markup
+    INTO v_markup
+    FROM product_group
+    WHERE id = :NEW.group_id;
+
+    -- Вычисляем розничную цену
+    :NEW.retail_price := :NEW.entry_price * (1 + v_markup);
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      -- Если группа товара не найдена
+      :NEW.retail_price := 0;
+  END;
+END;
+/
+ALTER TRIGGER "USER1"."UPDATE_RETAIL_PRICE" ENABLE;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."INSERT_GROUP_C_RETAIL" 
+AFTER INSERT ON product
+FOR EACH ROW
+BEGIN
+    UPDATE product_group
+    SET c_retail = c_retail + (:NEW.retail_price * :NEW.count)
+    WHERE id = :NEW.group_id;
+END;
+/
+ALTER TRIGGER "USER1"."INSERT_GROUP_C_RETAIL" ENABLE;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."UPDATE_GROUP_COUNT" 
+FOR INSERT OR UPDATE OF COUNT OR DELETE ON product
+COMPOUND TRIGGER
+
+    TYPE t_group_ids IS TABLE OF NUMBER INDEX BY PLS_INTEGER;
+    group_ids t_group_ids;
+
+    BEFORE STATEMENT IS
+    BEGIN
+        -- Очистить массив group_ids перед каждым обновлением
+        group_ids.DELETE;
+    END BEFORE STATEMENT;
+
+    AFTER EACH ROW IS
+    BEGIN
+        -- Заполнить массив group_ids с идентификаторами групп товаров, которые были изменены
+        IF UPDATING('COUNT') THEN
+            group_ids(group_ids.COUNT + 1) := :NEW.group_id;
+        ELSIF INSERTING THEN
+            group_ids(group_ids.COUNT + 1) := :NEW.group_id;
+        ELSIF DELETING THEN
+            group_ids(group_ids.COUNT + 1) := :OLD.group_id;
+        END IF;
+    END AFTER EACH ROW;
+
+    AFTER STATEMENT IS
+    BEGIN
+        -- Обновить "COUNT" в группах товаров, которые были изменены
+        FOR indx IN 1 .. group_ids.COUNT LOOP
+            DECLARE
+                v_total_count NUMBER;
+            BEGIN
+                -- Вычислить общее количество товаров в группе
+                SELECT SUM(count) INTO v_total_count
+                FROM product
+                WHERE group_id = group_ids(indx);
+
+                -- Обновить "COUNT" в соответствующей группе товаров
+                UPDATE product_group
+                SET count = CASE
+                    WHEN v_total_count < 0 THEN 0
+                    ELSE v_total_count
+                END
+                WHERE id = group_ids(indx);
+            END;
+        END LOOP;
+    END AFTER STATEMENT;
+
+END "UPDATE_GROUP_COUNT";
+/
+ALTER TRIGGER "USER1"."UPDATE_GROUP_COUNT" ENABLE;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."DELETE_GROUP_C_RETAIL" 
+FOR DELETE ON product
+COMPOUND TRIGGER
+
+    TYPE t_group_ids IS TABLE OF NUMBER INDEX BY PLS_INTEGER;
+    group_ids t_group_ids;
+
+    BEFORE STATEMENT IS
+    BEGIN
+        -- Очистить массив group_ids перед каждым удалением
+        group_ids.DELETE;
+    END BEFORE STATEMENT;
+
+    AFTER EACH ROW IS
+    BEGIN
+        -- Заполнить массив group_ids с идентификаторами групп товаров, которые были изменены
+        group_ids(group_ids.COUNT + 1) := :OLD.group_id;
+    END AFTER EACH ROW;
+
+    AFTER STATEMENT IS
+    BEGIN
+        -- Обновить c_retail для групп товаров, которые были изменены
+        FOR indx IN 1 .. group_ids.COUNT LOOP
+            DECLARE
+                v_total_retail NUMBER;
+            BEGIN
+                -- Вычислить общую сумму розничных цен для группы товаров
+                SELECT SUM(retail_price * count) INTO v_total_retail
+                FROM product
+                WHERE group_id = group_ids(indx);
+
+                -- Обновить c_retail для соответствующей группы товаров
+                UPDATE product_group
+                SET c_retail = CASE
+                    WHEN v_total_retail < 0 THEN 0
+                    ELSE v_total_retail
+                END
+                WHERE id = group_ids(indx);
+            END;
+        END LOOP;
+    END AFTER STATEMENT;
+
+END "DELETE_GROUP_C_RETAIL";
+/
+ALTER TRIGGER "USER1"."DELETE_GROUP_C_RETAIL" ENABLE;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."UPDATE_GROUP_C_RETAIL" 
+  BEFORE UPDATE OF entry_price,count ON product
+  FOR EACH ROW
+BEGIN
+    UPDATE product_group
+    SET c_retail = c_retail - (:OLD.retail_price * :OLD.count) + (:NEW.retail_price * :NEW.count)
+    WHERE id = :NEW.group_id;
+END;
+/
+ALTER TRIGGER "USER1"."UPDATE_GROUP_C_RETAIL" ENABLE;
+
+
+  CREATE TABLE "USER1"."PRODUCT_GROUP" 
+   (	"ID" NUMBER(*,0) DEFAULT "USER1"."GROUP_SEQUENCE"."NEXTVAL" NOT NULL ENABLE, 
+	"NAME" VARCHAR2(80 BYTE) NOT NULL ENABLE, 
+	"COUNT" NUMBER(*,0) DEFAULT 0, 
+	"C_RETAIL" NUMBER DEFAULT 0, 
+	"MARKUP" NUMBER DEFAULT 0 NOT NULL ENABLE, 
+	 CONSTRAINT "PRODUCT_GROUP_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE, 
+	 CONSTRAINT "PRODUCT_GROUP_CHK1" CHECK (markup >= 0 AND markup <= 1
+) ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."UPDATE_RETAIL_PRICES" 
+FOR UPDATE OF MARKUP ON product_group
+COMPOUND TRIGGER
+
+    TYPE t_group_ids IS TABLE OF NUMBER INDEX BY PLS_INTEGER;
+    group_ids t_group_ids;
+
+    BEFORE STATEMENT IS
+    BEGIN
+        -- Очистить массив group_ids перед каждым обновлением
+        group_ids.DELETE;
+    END BEFORE STATEMENT;
+
+    AFTER EACH ROW IS
+    BEGIN
+        -- Заполнить массив group_ids с идентификаторами групп товаров, которые были изменены
+        IF UPDATING('MARKUP') THEN
+            group_ids(group_ids.COUNT + 1) := :NEW.id;
+        END IF;
+    END AFTER EACH ROW;
+
+    AFTER STATEMENT IS
+    BEGIN
+        -- Обновить розничные цены и c_retail для групп товаров, которые были изменены
+        FOR indx IN 1 .. group_ids.COUNT LOOP
+            DECLARE
+                v_count NUMBER;
+                v_retail_price NUMBER;
+            BEGIN
+                -- Обновляем розничные цены в таблице "Товары" для соответствующей группы
+                UPDATE product
+                SET retail_price = entry_price * (1 + (SELECT markup FROM product_group WHERE id = group_ids(indx)))
+                WHERE group_id = group_ids(indx);
+
+                -- Получаем количество товаров и текущую розничную цену для расчета c_retail
+                SELECT count INTO v_count FROM product WHERE group_id = group_ids(indx);
+                SELECT retail_price INTO v_retail_price FROM product WHERE group_id = group_ids(indx);
+
+                -- Обновляем c_retail для группы товаров
+                UPDATE product_group
+                SET c_retail = v_retail_price * v_count
+                WHERE id = group_ids(indx);
+            END;
+        END LOOP;
+    END AFTER STATEMENT;
+
+END "UPDATE_RETAIL_PRICES";
+/
+ALTER TRIGGER "USER1"."UPDATE_RETAIL_PRICES" ENABLE;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."CASCADE_DELETE_PRODUCT" 
+FOR DELETE ON product_group
+COMPOUND TRIGGER
+    TYPE t_group_ids IS TABLE OF NUMBER INDEX BY PLS_INTEGER;
+    group_ids t_group_ids;
+
+    BEFORE STATEMENT IS
+    BEGIN
+        -- Очистить массив group_ids перед каждым обновлением
+        group_ids.DELETE;
+    END BEFORE STATEMENT;
+
+    AFTER EACH ROW IS
+    BEGIN
+        -- Заполнить массив group_ids с идентификаторами групп товаров, которые будут удалены
+        group_ids(group_ids.COUNT + 1) := :OLD.id;
+    END AFTER EACH ROW;
+
+    AFTER STATEMENT IS
+    BEGIN
+        -- Удалить связанные позиции из таблицы "Товары" для каждой группы товаров
+        FOR indx IN 1 .. group_ids.COUNT LOOP
+            DELETE FROM product WHERE group_id = group_ids(indx);
+        END LOOP;
+    END AFTER STATEMENT;
+END;
+/
+ALTER TRIGGER "USER1"."CASCADE_DELETE_PRODUCT" ENABLE;
+
+
+  GRANT SELECT ON "USER1"."PRODUCT_GROUP" TO "USER2";
+  GRANT UPDATE ON "USER1"."PRODUCT_GROUP" TO "USER2";
+
+
+
+  CREATE TABLE "USER1"."PRODUCT_GROUP" 
+   (	"ID" NUMBER(*,0) DEFAULT "USER1"."GROUP_SEQUENCE"."NEXTVAL" NOT NULL ENABLE, 
+	"NAME" VARCHAR2(80 BYTE) NOT NULL ENABLE, 
+	"COUNT" NUMBER(*,0) DEFAULT 0, 
+	"C_RETAIL" NUMBER DEFAULT 0, 
+	"MARKUP" NUMBER DEFAULT 0 NOT NULL ENABLE, 
+	 CONSTRAINT "PRODUCT_GROUP_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE, 
+	 CONSTRAINT "PRODUCT_GROUP_CHK1" CHECK (markup >= 0 AND markup <= 1
+) ENABLE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."UPDATE_RETAIL_PRICES" 
+FOR UPDATE OF MARKUP ON product_group
+COMPOUND TRIGGER
+
+    TYPE t_group_ids IS TABLE OF NUMBER INDEX BY PLS_INTEGER;
+    group_ids t_group_ids;
+
+    BEFORE STATEMENT IS
+    BEGIN
+        -- Очистить массив group_ids перед каждым обновлением
+        group_ids.DELETE;
+    END BEFORE STATEMENT;
+
+    AFTER EACH ROW IS
+    BEGIN
+        -- Заполнить массив group_ids с идентификаторами групп товаров, которые были изменены
+        IF UPDATING('MARKUP') THEN
+            group_ids(group_ids.COUNT + 1) := :NEW.id;
+        END IF;
+    END AFTER EACH ROW;
+
+    AFTER STATEMENT IS
+    BEGIN
+        -- Обновить розничные цены и c_retail для групп товаров, которые были изменены
+        FOR indx IN 1 .. group_ids.COUNT LOOP
+            DECLARE
+                v_count NUMBER;
+                v_retail_price NUMBER;
+            BEGIN
+                -- Обновляем розничные цены в таблице "Товары" для соответствующей группы
+                UPDATE product
+                SET retail_price = entry_price * (1 + (SELECT markup FROM product_group WHERE id = group_ids(indx)))
+                WHERE group_id = group_ids(indx);
+
+                -- Получаем количество товаров и текущую розничную цену для расчета c_retail
+                SELECT count INTO v_count FROM product WHERE group_id = group_ids(indx);
+                SELECT retail_price INTO v_retail_price FROM product WHERE group_id = group_ids(indx);
+
+                -- Обновляем c_retail для группы товаров
+                UPDATE product_group
+                SET c_retail = v_retail_price * v_count
+                WHERE id = group_ids(indx);
+            END;
+        END LOOP;
+    END AFTER STATEMENT;
+
+END "UPDATE_RETAIL_PRICES";
+/
+ALTER TRIGGER "USER1"."UPDATE_RETAIL_PRICES" ENABLE;
+
+  CREATE OR REPLACE NONEDITIONABLE TRIGGER "USER1"."CASCADE_DELETE_PRODUCT" 
+FOR DELETE ON product_group
+COMPOUND TRIGGER
+    TYPE t_group_ids IS TABLE OF NUMBER INDEX BY PLS_INTEGER;
+    group_ids t_group_ids;
+
+    BEFORE STATEMENT IS
+    BEGIN
+        -- Очистить массив group_ids перед каждым обновлением
+        group_ids.DELETE;
+    END BEFORE STATEMENT;
+
+    AFTER EACH ROW IS
+    BEGIN
+        -- Заполнить массив group_ids с идентификаторами групп товаров, которые будут удалены
+        group_ids(group_ids.COUNT + 1) := :OLD.id;
+    END AFTER EACH ROW;
+
+    AFTER STATEMENT IS
+    BEGIN
+        -- Удалить связанные позиции из таблицы "Товары" для каждой группы товаров
+        FOR indx IN 1 .. group_ids.COUNT LOOP
+            DELETE FROM product WHERE group_id = group_ids(indx);
+        END LOOP;
+    END AFTER STATEMENT;
+END;
+/
+ALTER TRIGGER "USER1"."CASCADE_DELETE_PRODUCT" ENABLE;
+
+
+  GRANT SELECT ON "USER1"."PRODUCT_GROUP" TO "USER2";
+  GRANT UPDATE ON "USER1"."PRODUCT_GROUP" TO "USER2";
+
+
+
+SELECT
+  p.NAME AS Product_name,
+  pg.NAME AS Group_name,
+  p.ENTRY_PRICE AS Entry_price,
+  p.COUNT AS Product_count
+FROM
+  PRODUCT p
+JOIN
+  PRODUCT_GROUP pg ON p.GROUP_ID = pg.ID
+
+
+
+create or replace NONEDITIONABLE PROCEDURE "GET_GROUP_ID_BY_NAME" (
+  p_group_name IN PRODUCT_GROUP.NAME%TYPE,
+  p_group_id OUT PRODUCT_GROUP.ID%TYPE
+)
+IS
+BEGIN
+  SELECT ID
+  INTO p_group_id
+  FROM PRODUCT_GROUP
+  WHERE NAME = p_group_name;
+
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+    RAISE_APPLICATION_ERROR(-20001, 'Группа с именем ' || p_group_name || ' не найдена.');END GET_GROUP_ID_BY_NAME;
+
+
+create or replace NONEDITIONABLE PROCEDURE "GET_PRODUCT_ID_BY_NAME" (
+  p_name IN PRODUCT.NAME%TYPE,
+  p_id OUT PRODUCT.ID%TYPE
+)
+IS
+BEGIN
+  SELECT ID
+  INTO p_id
+  FROM PRODUCT
+  WHERE NAME = p_name;
+
+END GET_PRODUCT_ID_BY_NAME;
+
+
+create or replace NONEDITIONABLE PROCEDURE read_generated_key(file_name VARCHAR2, key OUT RAW) AS
+  fk1 UTL_FILE.FILE_TYPE;
+BEGIN
+  BEGIN
+    fk1 := UTL_FILE.FOPEN('KEY_DIR',file_name , 'rb', 16);
+    UTL_FILE.GET_RAW(fk1, key, DBMS_LOB.GETLENGTH(key));
+    UTL_FILE.FCLOSE(fk1);
+    DBMS_OUTPUT.PUT_LINE('Прочитанный ключ: ' || key);
+  EXCEPTION
+    WHEN UTL_FILE.INVALID_OPERATION THEN
+      DBMS_OUTPUT.PUT_LINE('Ошибка: файл не существует.');
+    WHEN OTHERS THEN
+      DBMS_OUTPUT.PUT_LINE('Произошла ошибка: ' || SQLERRM);
+  END;
+END;
+
+
+   CREATE SEQUENCE  "USER1"."GROUP_SEQUENCE"  MINVALUE 1 MAXVALUE 200 INCREMENT BY 1 START WITH 201 CACHE 200 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+
+   CREATE SEQUENCE  "USER1"."PASSWORD_CHANGE_AUDIT_SEQ"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 NOCACHE  NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+
+   CREATE SEQUENCE  "USER1"."PRODUCT_SEQUENCE"  MINVALUE 1 MAXVALUE 1000000 INCREMENT BY 1 START WITH 813 CACHE 200 NOORDER  NOCYCLE  NOKEEP  NOSCALE  GLOBAL ;
+
+
