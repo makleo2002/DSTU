@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Os_Lab4": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "Профиль 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Максим\\source\\repos\\Os_Lab4\\Task2\\Program.cs"
+    }
+  }
+}

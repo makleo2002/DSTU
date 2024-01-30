@@ -1,0 +1,47 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="OOP_Lab2:war exploded">
+    <output-path>$PROJECT_DIR$/target/OOP_Lab2-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>OOP_Lab2</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="OOP_Lab2" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jaxb-api:2.3.1" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-core/4.0.0/jaxb-core-4.0.0.jar" output-file-name="org.glassfish.jaxb-jaxb-core-4.0.0.jar" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:4.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:2.1.0" />
+          <element id="library" level="project" name="Maven: org.eclipse.angus:angus-activation:1.0.0" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:4.1.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:4.0.0" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:4.0.0" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/sun/xml/bind/jaxb-core/4.0.0/jaxb-core-4.0.0.jar" output-file-name="com.sun.xml.bind-jaxb-core-4.0.0.jar" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:4.0.1" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.25.0-GA" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-swing:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-swing:win:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-base:18.0.2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:18.0.2" />
+          <element id="library" level="project" name="Maven: com.dlsc.formsfx:formsfx-core:11.5.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/OOP_Lab2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="OOP_Lab2/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {text-align: center; color: salmon;}
+    </style>
+    <meta charset="UTF-8">
+    <title>Delete Music</title>
+</head>
+<body>
+<h1>Delete music</h1>
+
+<form action="../CompanyController3" method="POST">
+    <label for="song_id">Song Id</label><br>
+    <input type="text" id="song_id" name="field_id"><br>
+
+    <input type="hidden" name="action" value="Delete">
+    <input type="submit" value="Enter">
+</form>
+<br><br>
+
+<button type=button name=back onclick=history.back()>Go back</button>
+
+</body>
+</html>

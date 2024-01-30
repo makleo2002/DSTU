@@ -1,0 +1,15 @@
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\bin\Debug\net6.0\Os_Lab4.exe
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\bin\Debug\net6.0\Os_Lab4.deps.json
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\bin\Debug\net6.0\Os_Lab4.runtimeconfig.json
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\bin\Debug\net6.0\Os_Lab4.dll
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\bin\Debug\net6.0\Os_Lab4.pdb
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\Os_Lab4.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\Os_Lab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\Os_Lab4.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\Os_Lab4.AssemblyInfo.cs
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\Os_Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\Os_Lab4.dll
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\refint\Os_Lab4.dll
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\Os_Lab4.pdb
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\Os_Lab4.genruntimeconfig.cache
+C:\Users\Максим\source\repos\Os_Lab4\Os_Lab4\obj\Debug\net6.0\ref\Os_Lab4.dll

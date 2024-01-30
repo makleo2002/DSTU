@@ -1,0 +1,17 @@
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.csproj.GenerateResource.cache
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.AssemblyInfo.cs
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\bin\Debug\net6.0-windows\SeaFight.exe
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\bin\Debug\net6.0-windows\SeaFight.deps.json
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\bin\Debug\net6.0-windows\SeaFight.runtimeconfig.json
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\bin\Debug\net6.0-windows\SeaFight.dll
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\bin\Debug\net6.0-windows\SeaFight.pdb
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.dll
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\refint\SeaFight.dll
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.pdb
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.genruntimeconfig.cache
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\ref\SeaFight.dll
+C:\Users\Максим\source\repos\Os_Lab4\SeaFight\obj\Debug\net6.0-windows\SeaFight.Map.resources

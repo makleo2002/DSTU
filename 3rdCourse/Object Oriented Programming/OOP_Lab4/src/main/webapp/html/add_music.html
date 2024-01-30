@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+       h1 {text-align: center; color:gold;}
+    </style>
+    <meta charset="UTF-8">
+    <title>Add music</title>
+</head>
+<body>
+<h1>Add music</h1>
+
+<!--write in the action attribute the URL pattern of the servlet without /-->
+<form action="../CompanyController3" method = "POST">
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="field_name"><br>
+
+    <label for="first_name">Singer's First Name</label><br>
+    <input type="text" id="first_name" name="field_first_name"><br>
+
+    <label for="second_name">Singer's Second Name</label><br>
+    <input type="text" id="second_name" name="field_second_name"><br>
+    <input type="hidden" name="action" value="Add">
+    <input type="submit" value="Enter">
+</form>
+<br><br>
+
+<button type=button name=back onclick=history.back()>Go back</button>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    h1 {color: aqua; text-align: center}
+  </style>
+    <meta charset="UTF-8">
+    <title>Delete Data</title>
+</head>
+<body>
+<h1>Delete Product</h1>
+
+<form action="../CompanyController1" method = "POST">
+  <label for="product_id">Product Id</label><br>
+  <input type="text" id="product_id" name="field_id"><br>
+
+  <input type="hidden" name="action" value="Delete">
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+
+<a href = "http://localhost:8080/OOP_Lab4_war/">Go back</a>
+
+
+</body>
+</html>

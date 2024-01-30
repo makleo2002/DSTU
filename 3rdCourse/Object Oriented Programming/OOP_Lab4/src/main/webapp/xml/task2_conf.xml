@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Config name_db="Company">
+    <url1>jdbc:sqlserver://127.0.0.1:1433;database=Company;encrypt=true;trustServerCertificate=true;</url1>
+    <url2>jdbc:sqlserver://127.0.0.1:1433;encrypt=true;trustServerCertificate=true;</url2>
+    <user>_Maxim_</user>
+    <password>Hero1904!</password>
+</Config>

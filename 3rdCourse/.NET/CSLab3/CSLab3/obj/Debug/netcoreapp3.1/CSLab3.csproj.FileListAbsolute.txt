@@ -1,0 +1,7 @@
+C:\Users\Максим\source\repos\CSLab3\CSLab3\obj\Debug\netcoreapp3.1\CSLab3.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\CSLab3\CSLab3\obj\Debug\netcoreapp3.1\CSLab3.Form1.resources
+C:\Users\Максим\source\repos\CSLab3\CSLab3\obj\Debug\netcoreapp3.1\CSLab3.csproj.GenerateResource.cache
+C:\Users\Максим\source\repos\CSLab3\CSLab3\obj\Debug\netcoreapp3.1\CSLab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\CSLab3\CSLab3\obj\Debug\netcoreapp3.1\CSLab3.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\CSLab3\CSLab3\obj\Debug\netcoreapp3.1\CSLab3.AssemblyInfo.cs
+C:\Users\Максим\source\repos\CSLab3\CSLab3\obj\Debug\netcoreapp3.1\CSLab3.csproj.CoreCompileInputs.cache

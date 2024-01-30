@@ -1,0 +1,15 @@
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\bin\Debug\net7.0\Alg_Lab4.exe
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\bin\Debug\net7.0\Alg_Lab4.deps.json
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\bin\Debug\net7.0\Alg_Lab4.runtimeconfig.json
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\bin\Debug\net7.0\Alg_Lab4.dll
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\bin\Debug\net7.0\Alg_Lab4.pdb
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\Alg_Lab4.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\Alg_Lab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\Alg_Lab4.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\Alg_Lab4.AssemblyInfo.cs
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\Alg_Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\Alg_Lab4.dll
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\refint\Alg_Lab4.dll
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\Alg_Lab4.pdb
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\Alg_Lab4.genruntimeconfig.cache
+C:\Users\Максим\source\repos\Alg_Lab4\Alg_Lab4\obj\Debug\net7.0\ref\Alg_Lab4.dll

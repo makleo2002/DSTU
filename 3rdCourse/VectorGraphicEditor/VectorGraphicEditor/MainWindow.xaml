@@ -1,0 +1,106 @@
+﻿<Window x:Class="VectorGraphicEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VectorGraphicEditor"
+        mc:Ignorable="d"
+        
+        Title="VectorGraphicEditor" Height="600" Width="800" Closed="Window_Closed">
+    <Grid  Margin="0,0,0,-6">
+
+
+        <ToolBar  Margin="0,16,0,0" VerticalAlignment="Top"  HorizontalAlignment="Center" >
+
+            <Button Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="30" Height="30" Background="White" Click="Color_Click"/>
+            <Button Content="" VerticalAlignment="Top" Width="30" Height="30" Background="Black" Click="Color_Click"/>
+            <Button Content="" VerticalAlignment="Top" Width="30" Height="30" Background="Red" Click="Color_Click"/>
+            <Button Content="" VerticalAlignment="Top" Width="30" Height="30" Background="#FF0FFF00" HorizontalAlignment="Left" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5" Click="Color_Click">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.955"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.25"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button Content="" VerticalAlignment="Top" Width="30" Height="30" Background="#FF0003FF" Click="Color_Click"/>
+            <Button Content="" VerticalAlignment="Top" Width="30" Height="30" Background="#FFF400FF" Click="Color_Click"/>
+            <Button Content="" VerticalAlignment="Top" Width="30" Height="30" Background="#FF00FAFF" Click="Color_Click"/>
+            <Button Content="" VerticalAlignment="Top" Width="30" Height="30" Background="#FFFFE500" Click="Color_Click"/>
+            <Button Content="" VerticalAlignment="Top" Width="30" Height="30" Background="#FFFF6E00" Click="Color_Click" HorizontalAlignment="Left"/>
+            <Slider x:Name="slider" Width="245" Height="29" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#00000000" Foreground="#FFF0F0F0" ValueChanged="Slider_ValueChanged"/>
+            <Button x:Name="undo" Content="" VerticalAlignment="Top" Click="Undo_Click" Width="40" Height="40">
+                <Button.Background>
+                    <ImageBrush ImageSource="/undo.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" Click="SaveFile" Height="40" Width="41">
+                <Button.Background>
+                    <ImageBrush ImageSource="/save.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" VerticalAlignment="Top" Click="Clear_Click" Width="40" Height="40">
+                <Button.Background>
+                    <ImageBrush ImageSource="/clear1.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="pencil1" Content="" Click="Pencil_Click" Width="40" Height="40">
+                <Button.Background>
+                    <ImageBrush ImageSource="/pen.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="bucket1" Content="" Click="Bucket_Click" Width="40" Height="40">
+                <Button.Background>
+                    <ImageBrush ImageSource="/bucket2.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="eraser1" Content="" Click="Eraser_Click" Width="40" Height="40">
+                <Button.Background>
+                    <ImageBrush ImageSource="/wp7745491.png"/>
+                </Button.Background>
+            </Button>
+
+
+        </ToolBar>
+
+        <Canvas x:Name="paintSurface"  ClipToBounds="True"  MouseDown="paintSurface_MouseDown" MouseMove="paintSurface_MouseMove" MouseUp="paintSurface_MouseUp" Margin="0,106,0,0" Grid.ColumnSpan="2" >
+
+        </Canvas>
+
+        <Menu  VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <MenuItem Header="Файл" HorizontalAlignment="Left">
+                <MenuItem Header="Новый файл" Click="NewFile" HorizontalAlignment="Left"/>
+                <MenuItem Header="Открыть файл" Click="OpenFile"/>
+                <MenuItem Header="Сохранить файл" Click="SaveFile"/>
+                <MenuItem Header="Выйти" Click="Exit"></MenuItem>
+
+            </MenuItem>
+            <MenuItem Header="О программе" Click="AboutProgram_Click" ></MenuItem>
+        </Menu>
+        <ToolBar  Margin="0,58,0,0" VerticalAlignment="Top"  HorizontalAlignment="Center"  Background="#FDEEF5FD">
+            <Button x:Name="line1" Content="" Click="Line_Click" Width="40" Height="40" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="/line.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="circle1" Content="" Click="Circle_Click" Width="40" Height="40" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="/circle.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="rectangle1" Content="" Click="Rectangle_Click" Width="40" Height="40" VerticalAlignment="Top">
+                <Button.Background>
+                    <ImageBrush ImageSource="/rectangle.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="triangle1" Content="" Width="40" Height="40" Click="Triangle_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/triangle.png"/>
+                </Button.Background>
+            </Button>
+
+        </ToolBar>
+    </Grid>
+</Window>

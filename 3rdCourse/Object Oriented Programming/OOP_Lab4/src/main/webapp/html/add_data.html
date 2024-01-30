@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {color: mediumspringgreen; text-align: center}
+    </style>
+    <meta charset="UTF-8">
+    <title>Add Data</title>
+</head>
+<body>
+<h1>Add Item</h1>
+<p>
+    Category:<br>
+    1 -> "Household Appliances"; 2 -> "Smart Phones & Camera & Photo"; 3 -> "TV & Consoles & Audio";<br>
+    4 -> "Computers & Laptops & Accessories"; 5 -> "Office & Furniture";<br><br>
+
+    Manufacturer<br>
+    1 -> "Scarlett"; 2 -> "Samsung"; 3 -> "Sony";<br>
+    4 -> "Acer"; 5 -> "Epson";<br><br>
+
+    Store<br>
+    1 -> "DNS"; 2 -> "Eldorado"; 3 -> "Mvideo";<br>
+    4 -> "Citilink"; 5 -> "Ozon";<br><br>
+</p>
+
+<form action="../CompanyController1" method = "POST">
+
+    <label for="product_name">Product Name</label><br>
+    <input type="text" id="product_name" name="field_product_name"><br>
+
+    <label for="id_category">Category Id</label><br>
+    <input type="text" id="id_category" name="field_id_category"><br>
+
+    <label for="id_manufacturer">Manufacturer Id</label><br>
+    <input type="text" id="id_manufacturer" name="field_id_manufacturer"><br>
+
+    <label for="id_store">Store Id</label><br>
+    <input type="text" id="id_store" name="field_id_store"><br>
+
+    <label for="price">Price</label><br>
+    <input type="text" id="price" name="field_price"><br>
+
+    <input type="hidden" name="action" value="Add">
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+
+<a href = "http://localhost:8080/OOP_Lab4_war/">Go back</a>
+
+</body>
+</html>

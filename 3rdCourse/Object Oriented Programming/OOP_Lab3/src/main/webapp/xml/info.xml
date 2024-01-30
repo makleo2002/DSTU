@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE songs SYSTEM "file:///C:/Users/Максим/IdeaProjects/OOP_Lab3/src/main/webapp/dtd/elements.dtd">
+<songs>
+    <song>
+        <name>Nothing_Feels_Right</name>
+        <genre>Rock</genre>
+        <author>Ozzy Osbourne</author>
+        <format>mp3</format>
+        <duration>5:36</duration>
+    </song>
+
+</songs>
+

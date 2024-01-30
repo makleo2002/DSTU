@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {color: blueviolet; text-align: center}
+    </style>
+    <meta charset="UTF-8">
+    <title>Update Data</title>
+</head>
+<body>
+<h1>Update Name</h1>
+
+<form action="../CompanyController1" method = "POST">
+    <label for="product_id">Product Id</label><br>
+    <input type="text" id="product_id" name="field_id"><br>
+
+    <label for="product_name">New Product Name</label><br>
+    <input type="text" id="product_name" name="field_product_name"><br>
+
+    <label for="price">New Price Value</label><br>
+    <input type="text" id="price" name="field_price"><br>
+
+
+    <input type="hidden" name="action" value="Update">
+    <input type="submit" value="Submit">
+</form>
+<br><br>
+
+<a href = "http://localhost:8080/OOP_Lab4_war/">Go back</a>
+
+</body>
+</html>

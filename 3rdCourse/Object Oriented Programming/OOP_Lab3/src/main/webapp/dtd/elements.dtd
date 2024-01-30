@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT songs (song+)>
+<!ELEMENT song (name,genre,author,format,duration)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT format (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>

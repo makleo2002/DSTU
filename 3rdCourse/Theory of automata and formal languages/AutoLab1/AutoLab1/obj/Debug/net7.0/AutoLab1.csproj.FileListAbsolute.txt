@@ -1,0 +1,15 @@
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\bin\Debug\net7.0\AutoLab1.exe
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\bin\Debug\net7.0\AutoLab1.deps.json
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\bin\Debug\net7.0\AutoLab1.runtimeconfig.json
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\bin\Debug\net7.0\AutoLab1.dll
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\bin\Debug\net7.0\AutoLab1.pdb
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\AutoLab1.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\AutoLab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\AutoLab1.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\AutoLab1.AssemblyInfo.cs
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\AutoLab1.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\AutoLab1.dll
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\refint\AutoLab1.dll
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\AutoLab1.pdb
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\AutoLab1.genruntimeconfig.cache
+C:\Users\Максим\source\repos\AutoLab1\AutoLab1\obj\Debug\net7.0\ref\AutoLab1.dll

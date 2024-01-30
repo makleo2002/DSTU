@@ -1,0 +1,15 @@
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\bin\Debug\net7.0\InfoLab2.exe
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\bin\Debug\net7.0\InfoLab2.deps.json
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\bin\Debug\net7.0\InfoLab2.runtimeconfig.json
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\bin\Debug\net7.0\InfoLab2.dll
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\bin\Debug\net7.0\InfoLab2.pdb
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\InfoLab2.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\InfoLab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\InfoLab2.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\InfoLab2.AssemblyInfo.cs
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\InfoLab2.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\InfoLab2.dll
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\refint\InfoLab2.dll
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\InfoLab2.pdb
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\InfoLab2.genruntimeconfig.cache
+C:\Users\Максим\source\repos\InfoLab2\InfoLab2\obj\Debug\net7.0\ref\InfoLab2.dll

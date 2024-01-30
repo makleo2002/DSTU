@@ -1,0 +1,15 @@
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\bin\Debug\net7.0\CS_Lab6.exe
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\bin\Debug\net7.0\CS_Lab6.deps.json
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\bin\Debug\net7.0\CS_Lab6.runtimeconfig.json
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\bin\Debug\net7.0\CS_Lab6.dll
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\bin\Debug\net7.0\CS_Lab6.pdb
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\CS_Lab6.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\CS_Lab6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\CS_Lab6.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\CS_Lab6.AssemblyInfo.cs
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\CS_Lab6.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\CS_Lab6.dll
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\refint\CS_Lab6.dll
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\CS_Lab6.pdb
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\CS_Lab6.genruntimeconfig.cache
+C:\Users\Максим\source\repos\CS_Lab6\CS_Lab6\obj\Debug\net7.0\ref\CS_Lab6.dll

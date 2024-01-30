@@ -1,0 +1,15 @@
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\Alg_Lab2.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\Alg_Lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\Alg_Lab2.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\Alg_Lab2.AssemblyInfo.cs
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\Alg_Lab2.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\bin\Debug\net7.0\Alg_Lab2.exe
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\bin\Debug\net7.0\Alg_Lab2.deps.json
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\bin\Debug\net7.0\Alg_Lab2.runtimeconfig.json
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\bin\Debug\net7.0\Alg_Lab2.dll
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\bin\Debug\net7.0\Alg_Lab2.pdb
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\Alg_Lab2.dll
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\refint\Alg_Lab2.dll
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\Alg_Lab2.pdb
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\Alg_Lab2.genruntimeconfig.cache
+C:\Users\Максим\source\repos\Alg_Lab2\Alg_Lab2\obj\Debug\net7.0\ref\Alg_Lab2.dll
