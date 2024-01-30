@@ -1,0 +1,180 @@
+let game = document.querySelector("#game");
+let score = document.querySelector("#score");
+let snakeLength = document.getElementById("snake-length");
+let gameContainer = document.getElementById("game-container");
+let userInfo = document.getElementById("user-info");
+let usernameInput = document.getElementById("username");
+let startButton = document.getElementById("start-game");
+let playerName = document.getElementById("player-name");
+let leaderBoard = document.getElementById("leaderboard");
+let title = document.getElementById("title");
+let container = document.getElementById("container");
+let record = 0;
+let scoreValue = 0; <!--текущий счет -->
+let snakeValue = 3;
+score.innerText = scoreValue;
+snakeLength.innerText=snakeValue;
+
+const SIZE = 20;
+
+let snake = [
+  { x: 5, y: 5 },
+  { x: 4, y: 5 },
+  { x: 3, y: 5 },
+];
+
+let dx = 1; <!--направление по иксу -->
+let dy = 0; <!--направление по игреку -->
+
+let apple = { x: 10, y: 10 };
+
+
+
+const gameLoop = () => {
+  snakeLogic();
+  drawgame();
+  setTimeout(gameLoop, 150);
+};
+let gameTimeout; // Добавляем переменную для хранения таймаута игрового цикла
+
+function startGame() {
+  // Останавливаем предыдущую игру
+  clearTimeout(gameTimeout);
+
+  let username = usernameInput.value;
+  if (username) {
+    playerName.innerText = username;
+    snakeLength.innerText = 3;
+    userInfo.style.display = "none";
+    gameContainer.style.display = "block";
+    leaderBoard.style.display = "block";
+    container.style.display = "block";
+    title.style.display = "block";
+    gameLoop();
+  }
+}
+
+startButton.addEventListener("click", startGame);
+
+const snakeLogic = () => { <!-- обновления состояния змейки -->
+  let head = { ...snake[0] };<!--Создание новой головы змейки на основе текущего положения головы и направления движения-->
+
+  head.x += dx;  <!-- направление головы-->
+  head.y += dy;
+  snake.unshift(head);
+  <!--если змейка съела яблоко (координаты головы совпадают с координатами яблока), то увеличивается счет, и яблоко появляется в новой позиции.-->
+  if (head.x === apple.x && head.y === apple.y) {
+    scoreValue++;
+    snakeValue++;
+    score.innerText = scoreValue;
+    snakeLength.innerText = snakeValue;
+    apple = {
+      x: Math.floor(Math.random() * 20),
+      y: Math.floor(Math.random() * 20),
+    };
+    <!--В противном случае, удаляется хвост змейки (массив snake укорачивается)-->
+  } else {
+    snake.pop();
+  }
+  <!--Проверка на условия завершения игры: змейка столкнулась с границей игрового поля или самой собой. Если это произошло, счет обнуляется, и змейка возвращается в начальное положение.-->
+  if (
+    head.x < 0 ||
+    head.x >= SIZE ||
+    head.y < 0 ||
+    head.y >= SIZE ||
+    snake.some(
+      (item) => item.x === head.x && item.y === head.y && item !== head
+    )
+  ) {
+    endGame();
+    scoreValue = 0;
+    snakeValue = 3;
+    score.innerText = scoreValue;
+    snakeLength.innerText = snakeValue;
+
+    snake = [
+      { x: 5, y: 5 },
+      { x: 4, y: 5 },
+      { x: 3, y: 5 },
+    ];
+
+    apple = { x: 10, y: 10 };
+
+    dx = 1;
+    dy = 0;
+  }
+};
+    <!--Очищается содержимое элемента с идентификатором "game". Создаются и добавляются на игровое поле элементы для отображения сетки и сегментов змейки. Элементы с классом "snake" представляют собой сегменты змейки, а элемент с классом "apple" представляет собой яблоко.-->
+const drawgame = () => {   <!--отображения текущего состояния игры на экране-->
+  game.innerHTML = "";
+  for (let row = 0; row < 20; row++) {
+    for (let col = 0; col < 20; col++) {
+      const cell = document.createElement("span");
+      cell.classList.add((row + col) % 2 === 0 ? "one" : "two");
+      game.appendChild(cell);
+    }
+  }
+  snake.forEach((item) => {
+    let div = document.createElement("div");
+    div.style = `top:${item.y * 20}px;left:${item.x * 20}px;`;
+    div.classList.add("snake");
+    game.appendChild(div);
+  });
+
+  let div = document.createElement("div");
+  div.style = `top:${apple.y * 20}px;left:${apple.x * 20}px;`;
+  div.classList.add("apple");
+  game.appendChild(div);
+};
+function endGame() {
+  // Ваш текущий код окончания игры
+
+  // Получите результат игры (например, scoreValue) и имя игрока (например, username)
+  let username = usernameInput.value;
+
+  if (username) {
+    // Предположим, что у вас есть массив с рекордами
+    const leaderboardData = [
+      { name: "Игрок1", score: 10 },
+      { name: "Игрок2", score: 15 },
+      { name: "Игрок3", score: 8 },
+    ];
+ if(scoreValue>record){
+     record=scoreValue;
+}
+
+    leaderboardData.push({ name: username, score: record });
+    leaderboardData.sort((a, b) => b.score - a.score); // Сортируйте рекорды по убыванию счета
+
+    const leaderboardList = document.getElementById("leaderboard-list");
+    leaderboardList.innerHTML = ""; // Очистите предыдущий список
+
+    // Выведите новый список рекордов
+    leaderboardData.slice(0, 5).forEach((record, index) => {
+      if (record.name) { // Проверка на пустое имя
+        const listItem = document.createElement("li");
+        listItem.innerText = `${index + 1}. ${record.name}: ${record.score}`;
+        leaderboardList.appendChild(listItem);
+      }
+    });
+
+    // Покажите блок рекордов
+    document.getElementById("leaderboard").style.display = "block";
+  }
+}
+<!--Отслеживает нажатия клавиш и изменяет направление движения змейки соответственно (вверх, вниз, влево или вправо).-->
+document.addEventListener("keydown", (ev) => {
+  if (ev.key === "ArrowUp" && dy === 0) {
+    dx = 0;
+    dy = -1;
+  } else if (ev.key === "ArrowDown" && dy === 0) {
+    dx = 0;
+    dy = 1;
+  } else if (ev.key === "ArrowRight" && dx === 0) {
+    dy = 0;
+    dx = 1;
+  } else if (ev.key === "ArrowLeft" && dx === 0) {
+    dy = 0;
+    dx = -1;
+  }
+});

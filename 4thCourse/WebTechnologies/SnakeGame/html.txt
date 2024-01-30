@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+</head>
+<body>
+  <div><h1 id="title">Snake Game</h1></div>
+<div id="user-info">
+        <label for="username">Введите ваше имя: </label>
+        <input type="text" id="username" />
+        <button id="start-game">Начать игру</button>
+</div>
+<div id="game-container">
+        <div id="game"></div>
+</div>
+<div id="container">
+<div id="leaderboard">
+    <h2>Рекорды игроков</h2>
+    <ul id="leaderboard-list">
+        <!-- Сюда будут добавляться записи о рекордах игроков -->
+    </ul>
+</div>
+<div id="stats">
+    <table>
+        <tr>
+            <td>Игрок:</td>
+            <td id="player-name">Имя игрока</td>
+        </tr>
+        <tr>
+            <td>Счет:</td>
+            <td id="score">0</td>
+        </tr>
+        <tr>
+            <td>Длина змейки:</td>
+            <td id="snake-length">0</td>
+        </tr>
+    </table>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>

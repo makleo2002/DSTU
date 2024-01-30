@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 100%;
+}
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+a:hover{
+  color: #FFFF00;
+}
+a{
+   text-decoration: none;
+}
+.overlay {
+  display: flex;
+  height: 200px;
+  background-color: rgb(95 13 238 / 0.5);
+}
+.overlay h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 26px;
+}
+.title-icons{
+   margin: 2% 0 0 7%;
+   width: 17%;
+   height:50%;
+}
+.title-icons img {
+   width: 15%;
+}
+.title-icons p{
+  text-align: center;
+  margin: 0 40% 0 0
+}
+.site-info{
+   margin: 3% 0 0 0;
+   width: 18%;
+   height: 30%;
+}
+.site-info img{
+  width: 10%;
+}
+.phone {
+	color: white;
+	font-size: 22px;
+	font-weight: 900;
+}
+.phone:hover{
+  color: #FFFF00;
+}
+.contact-info{
+  width: 33%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-info{
+  margin:3% auto;
+}
+.word {
+  margin: 0 5px;
+  color: white; /* Цвет текста */
+  matgin: 100 0 0 0;
+}
+.separator {
+  width: 2px;
+  height: 20px;
+  background-color: white;
+  margin: 0 5px;
+}
+.links{
+width: 300px;
+height: 70px;
+margin: 15px 0 25px 20px;
+}
+.links img{
+  width: 60px;
+  height: 60px;
+  margin-right: 9%;
+}
+.search{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+.search input{
+  width: 90%;
+  height: 30px;
+  margin-right: 2%;
+}
+.search button{
+  width: 40px;
+  height: 40px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/3936/3936453.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+}
+.shop-menu{
+   width: 20%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   margin: 1% 0 0 5%;
+}
+.shop-menu img{
+  width: 35%;
+  margin: 5% auto;
+}
+.shop-submenu{
+  display: inline-flex;
+}
+.shop-menu button:active {
+  transform: scale(0.95); /* Добавляем эффект при нажатии на кнопку */
+}
+.shop-submenu button{
+  margin: 0 5% 0 0;
+}
+.shop-submenu img{
+  width:25px;  
+  height:25px;
+}
+.shop-submenu1{
+  display: flex;
+  justify-content: space-between;
+    margin: 0 9% 0 0;
+}
+.button1{
+  width: 80px;
+  height: 30px;
+  background-color: rgb(95 13 238 / 0);
+  border: 2px solid rgb(95 13 238 / 0);
+  cursor: pointer;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center; /* Выравнивание текста по центру */
+  display: flex; /* Используем flex для центрирования текста и изображения */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+}
+.button2{
+  width: 80px;
+  height: 30px;
+  background-color: rgb(95 13 238 / 0);
+  border: 2px solid rgb(95 13 238 / 0);
+  cursor: pointer;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center; /* Выравнивание текста по центру */
+  display: flex; /* Используем flex для центрирования текста и изображения */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+}
+.button3 {
+  width: 100px;
+  height: 30px;
+  background: linear-gradient(45deg, #FFD700, #FFFF00);
+  border: 2px solid #FFD700;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  text-align: center; /* Выравнивание текста по центру */
+  display: flex; /* Используем flex для центрирования текста и изображения */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+}
+/* Стили для кнопок настройки и поддержки */
+.button3:hover {
+  background: linear-gradient(45deg, #FFFF00, #FFD700);
+}
+
+.button4 {
+  width: 120px;
+  height: 30px;
+  background: linear-gradient(45deg, #73769e, #73769e);
+  border: 2px solid #73769e;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button4:hover {
+  background: linear-gradient(45deg, #555878, #555878);
+}
+
+.button4 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.image{
+  width: 250px;
+  height: 80px;
+}
+.container {
+  display: flex; /* Установите контейнеру flex-контейнером */
+  background-color: #f0fbfe;
+}
+.menu {
+  width: 30%;
+  height: 100%;
+  margin: 3% 5% 0 1%;
+  background: linear-gradient(135deg, #3399FF, #9933CC);
+  text-align: center;
+  color: white; /* Цвет текста в меню */
+}
+.catalog-header{
+  margin: 5% 0 0 0;
+}
+.content {
+  width: 770px;
+  margin: 5% 0 0 0 ;
+  font-size: 0;
+  flex:1;
+}
+
+.card {
+  display: inline-block;
+  width: 250px;
+  height: 450px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  padding: 25px 25px 30px;
+  box-shadow: 4px 4px 0 black;
+  position:relative;
+}
+.card button{
+  width: 80px;
+  height: 30px;
+  background-color: #ff3f46;
+  border: #ff3f46;
+  cursor: pointer;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.card button:hover {
+  background: linear-gradient(45deg, #ff0102, #ff0102);
+}
+.no-right-margin {
+  margin-right: 0;
+}
+.card-price {
+  font-weight: 800;
+  font-size: 25px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 4.5%;
+  left:5%;
+}
+.card-text {
+  font-size: 18px;
+  text-align: center;
+}
+.card-image {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+.card-width{
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+.card-art{
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 17%;
+  left: 5%;
+}
+.footer {
+  display: flex;
+  justify-content: center; /* Центрировать содержимое по горизонтали */
+  align-items: center; /* Центрировать содержимое по вертикали */
+  height: 200px;
+  background-color: #5f0dee;
+}
+.footer-content {
+  text-align: center; /* Центрировать текст по центру */
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
+.email {
+  margin-top: 10px; /* Добавить отступ между названием и почтой */
+  display: block; /* Перенести почту на следующую строку */
+   color: white;
+  font-size: 18px; /* Уменьшить размер шрифта для почты (по желанию) */
+}
+.footer-author {
+  margin: auto;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
+.catalog-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+}
+.catalog-link img{
+  width: 10%;
+  margin: 0 5% 0 0;
+}
+.catalog-subcatalog {
+  max-height: 0;
+  overflow: hidden;
+  text-align: left;
+  margin-left: 10%;
+}
+.catalog-subcatalog-link {
+  color: white;
+}
+.catalog-subcatalog-link:hover {
+  color: #FFD700; /* Желтый цвет текста при наведении */
+}
+/* Стили для отображения подменю при наведении */
+.catalog-item:hover .catalog-subcatalog {
+  max-height: 200px; /* Высота подменю */
+}
+/* Скрытие чекбоксов */
+.sub-menu-checkbox {
+  display: none;
+}
+.catalog-link:hover {
+  color: #FFD700; /* Желтый цвет текста при наведении */
+}

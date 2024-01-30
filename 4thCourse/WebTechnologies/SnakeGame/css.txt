@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+display:none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items:center;
+}
+#container{
+  display: flex;
+  flex-direction:column;
+  display:none;
+}
+#game {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+}
+#title {
+position:absolute;
+top:0;
+right:45%;
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+}
+
+.apple {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #F24405;
+}
+
+#game span {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.one {
+    background-color: #025E73;
+}
+
+.two {
+    background-color: #03A688;
+}
+
+/* Дополнительные стили для отображения статистики и имени */
+#user-info {
+    text-align: center;
+    display: block;
+}
+
+#game-container {
+    text-align: center;
+    display: none;
+}
+
+#stats {
+    margin: 20px 0 0 120px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 200px; /* Подгоните максимальную ширину по вашему усмотрению */
+    
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+    text-align: left; /* Измените на "left" для выравнивания по левому краю */
+    font-weight: bold;
+}
+
+#player-name,#score,#snake-length {
+font-weight: normal;
+}
+
+#leaderboard {
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    padding: 10px;
+    margin-left: 20px; /* Добавьте отступ справа от поля игры */
+    border-radius: 5px;
+    text-align: center;
+    width: 400px; /* Задайте ширину блока рекордов по вашему усмотрению */
+    height: 200px; /* Исправлено: замените "heigth" на "height" */
+    overflow-y: scroll; /* Добавьте вертикальную прокрутку, если содержимое блока слишком высоко */
+    display: none;
+}
+
+#leaderboard h2 {
+    margin: 0 0 10% 0;
+    font-size: 18px;
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+}
+
+#leaderboard-list li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}

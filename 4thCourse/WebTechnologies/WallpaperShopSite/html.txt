@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мир Обоев</title>
+    <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body> 
+     <header class="overlay">
+       
+             <div class="title-icons">
+                  <h1 class="header-title"> Мир Обоев </h1>
+                  <img src="https://www.svgrepo.com/show/178197/fabric-material.svg" alt="Обои">
+                  <img src="https://www.svgrepo.com/show/17547/paint-roller.svg" alt="Валик">
+                  <img src="https://library.kissclipart.com/20180830/zfw/kissclipart-paint-bucket-drawing-easy-clipart-drawing-paint-cl-4ba76cb2a6a5fa60.png" alt="Краска">
+                  <img src="https://cdn1.iconfinder.com/data/icons/household-items-2/100/glue-1024.png" alt="Клей">
+                  <p class="main-text">Интернет магазин<br>от эконом до премиум</p>
+             </div>
+            
+             <div class="site-info" >
+         	  <a class="phone" href="tel:+79289063707"> <img src="https://i.ibb.co/6FV2Mqb/pngtree-phone-icon-png-image-1817554-Photo-Room-png-Photo-Room.png" alt="Обои">+7 (928) 906-37-07</a>
+          	  <p><img src="https://i.ibb.co/D7Vkf5p/png-transparent-computer-icons-clock-angle-illustrator-time-Photo-Room-png-Photo-Room.png" alt="Обои">ежедневно 9:00 — 19:00</p> 
+             </div>
+       
+             <div class="contact-info">
+               <div class="c-info"> 
+                 <a href="#" class="word">О компании</a>
+                 <span class="separator"></span>
+                 <a href="#" class="word">Новости</a>
+                 <span class="separator"></span>
+                 <a href="#" class="word">Услуги</a>
+                 <span class="separator"></span>
+                 <a href="#" class="word">Интересное</a>
+                 <span class="separator"></span>
+                 <a href="#" class="word">Контакты</a>
+               </div>
+              <div class="links">
+               <a href=""><img src="https://cdn.worldvectorlogo.com/logos/telegram-2019-logo.svg"></a>
+               <a href=""><img src="https://deskmed.ru/wp-content/files/photo-1-1536x1536.png"></a>   
+               <a href=""><img src="https://i.ibb.co/r0BWc2k/xy-KKxm6-Y2k-Va-P-FPjhv3-M-transformed.png"></a>
+              </div>
+              <div class="search">
+               <input type="search" id="site-search" placeholder="Поиск по сайту..." />
+               <button></button>
+              </div>
+             </div>
+
+         <div class="shop-menu" >
+    <div class="shop-submenu">
+         <button class="button4"><img  src="https://d3r4tb575cotg3.cloudfront.net/static/noun_1351298.png" > Поддержка</button>
+ <button class="button4"><img  src="https://cdn.icon-icons.com/icons2/1507/PNG/512/applicationssystem_103794.png" > Настройки</button>    
+    </div>
+          <div>
+            <img style=" width: 250px; height: 80px;" class="image" src="https://toshop.ru/pictures/action_2539.jpg" > 
+          </div>
+                
+    <div class="shop-submenu1">
+        <a  class="button1"><img  src="https://i.ibb.co/FDrPTry/Location-Larger.png"> Город</a>
+        <a  class="button2"><img  src="https://cdn1.iconfinder.com/data/icons/digital-symbols/100/ECommerce_Digital_Website_Media_Interface_Online-130-1024.png" > Вход</a>
+        <button class="button3"><img  src="https://i.ibb.co/D11L2Ss/shopping-cart-computer-icons-white-png-favpng-CUXn-L8s3z-Zy-EZLunnr3-Dd-TEQX-removebg-preview.png" > Корзина</button>
+    </div>
+       
+     </header>
+    
+       <div class="container">
+              <section class="menu">
+                      <div class="catalog">
+		              <div class="catalog-header"><span>Категории</span></div>
+			      <ul class="catalog-list">
+			          <li class="catalog-item">
+                   <label  class="catalog-link">
+            				<img src="https://www.svgrepo.com/show/178197/fabric-material.svg" alt="Обои" >
+                    <p class="list">Обои<p>
+         			     </label>
+          	       <input type="checkbox" id="sub-menu-1" class="sub-menu-checkbox">
+          				 <div class="catalog-subcatalog">
+                     <ul>
+                      <li><a href="#" class="catalog-subcatalog-link">Россия</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Германия</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Италия</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Нидерланды</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Франция</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Китай</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Англия</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Турция</a></li>
+                     </ul>
+         				 </div>					
+			          </li>
+			          <li class="catalog-item">
+				     <label  class="catalog-link">
+            		<img src="https://i.ibb.co/t2KNtpb/650-6500238-png-file-removebg-preview.png" alt="Фотообои">
+                   <p>Фотообои</p>
+         			     </label>
+          	       <input type="checkbox" id="sub-menu-1" class="sub-menu-checkbox">
+          				 <div class="catalog-subcatalog">
+                     <ul>
+                      <li><a href="#" class="catalog-subcatalog-link">Пейзажи и природа</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Города и архитектура</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Искусство и абстракция</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Детская комната</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Космос и наука</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Еда и напитки</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Интерьер и дизайн</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Праздники и события</a></li>
+                     </ul>
+			          </li>			
+			          <li class="catalog-item">
+				     <label  class="catalog-link">
+            			<img src="https://www.svgrepo.com/show/24636/parquet.svg" alt="Настенные покрытия" >
+                    <p>Настенные покрытия</p>
+         			     </label>
+          	       <input type="checkbox" id="sub-menu-1" class="sub-menu-checkbox">
+          				 <div class="catalog-subcatalog">
+                     <ul>
+                      <li><a href="#" class="catalog-subcatalog-link">3D обои</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Текстурные покрытия</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Обои с объемными узорами</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Спецэффекты на стенах</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Флоуресцентные и светящиеся обои</a></li>
+                     </ul>
+			          </li>			
+			          <li class="catalog-item">
+				     <label  class="catalog-link">
+            	 <img src="https://www.svgrepo.com/show/178197/fabric-material.svg" alt="Жидкие обои">
+               <p>Жидкие обои</p>
+         			     </label>
+          	       <input type="checkbox" id="sub-menu-1" class="sub-menu-checkbox">
+          				 <div class="catalog-subcatalog">
+                     <ul>
+                      <li><a href="#" class="catalog-subcatalog-link">Текстурные</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Металлические</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Цветные</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">С эффектом мрамора</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Глянцевые</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Декоративные</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">С эффектом стекла</a></li>
+                     </ul>
+			          </li>			
+				  <li class="catalog-item">
+				           <label class="catalog-link">
+            				<img src="https://cdn1.iconfinder.com/data/icons/household-items-2/100/glue-1024.png" alt="Клей" >
+                     <p>Клей</p>
+         			     </label>
+          	       <input type="checkbox" id="sub-menu-1" class="sub-menu-checkbox">
+          				 <div class="catalog-subcatalog">
+                     <ul>
+                      <li><a href="#" class="catalog-subcatalog-link">Универсальный</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Для бумажных обоев</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Для виниловых обоев</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Для текстильных обоев</a></li>
+                     </ul>
+				  </li>			
+				  <li class="catalog-item">
+				     <label  class="catalog-link">
+            		<img src="https://cdn.onlinewebfonts.com/svg/img_551306.png" alt="Ламинат" >
+                     <p>Ламинат</p>
+         		 </label>
+          	       <input type="checkbox" id="sub-menu-1" class="sub-menu-checkbox">
+          				 <div class="catalog-subcatalog">
+                     <ul>
+                      <li><a href="#" class="catalog-subcatalog-link">Paradise</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Ritter</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Winlerk</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">WesterHof</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Egger Pro</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">GreenWald</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">EuroHome</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">AGT</a></li>
+                     </ul>
+ 
+				  </li>		
+            <li class="catalog-item">
+				     <label  class="catalog-link">
+            				<img src="https://library.kissclipart.com/20180830/zfw/kissclipart-paint-bucket-drawing-easy-clipart-drawing-paint-cl-4ba76cb2a6a5fa60.png" alt="Краска" >
+                    <p>Краска</p>
+         		 </label>
+          	       <input type="checkbox" id="sub-menu-1" class="sub-menu-checkbox">
+          				 <div class="catalog-subcatalog">
+                     <ul>
+                      <li><a href="#" class="catalog-subcatalog-link">Paradise</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Ritter</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Winlerk</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">WesterHof</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">Egger Pro</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">GreenWald</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">EuroHome</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">AGT</a></li>
+                     </ul>
+ 
+				  </li>	
+				  <li class="catalog-item">
+				     <label  class="catalog-link">
+            				<img src="https://www.svgrepo.com/show/178197/fabric-material.svg" alt="Лепной декор" > 
+                    <p>Лепной декор</p>
+         			     </label>
+          	       <input type="checkbox" id="sub-menu-1" class="sub-menu-checkbox">
+          				 <div class="catalog-subcatalog">
+                     <ul>
+                      <li><a href="#" class="catalog-subcatalog-link">Перфект</a></li>
+                      <li><a href="#" class="catalog-subcatalog-link">EuroWood</a></li>
+                     </ul>
+ 
+			          </li>						
+			      </ul>
+		      </div>
+              </section>	
+
+             <section class="content">
+
+               <div class="card">
+                  <img class="card-image" src="https://i.ibb.co/xhDqN50/1879.png"  />        
+                  <p class="card-text">Marburg Empire (Германия)</p>
+                  <h5 class="card-art">Арт. 4747</h5>
+                  <h5 class="card-width">Ширина: 1.06 м</h5>
+                  <h3 class="card-price">1150 Р</h3>
+                  <button>Купить</button>
+               </div>
+
+               <div class="card">
+                  <img class="card-image" src="https://i.ibb.co/F8VPmFq/1878.png" />        
+                  <p class="card-text">Zambaiti Parati Canova (Италия)</p>
+                  <h5 class="card-art">Арт. 4772</h5>
+                  <h5 class="card-width">Ширина: 1.06 м</h5>
+                  <h3 class="card-price">1500 Р</h3>
+                  <button>Купить</button>
+               </div>
+
+               <div class="card">
+                  <img class="card-image"src="https://i.ibb.co/hKzLVHM/1880.png"/>
+                  <p class="card-text">Primo Parati TESORO (Италия)</p>
+                  <h5 class="card-art">Арт. 5243</h5>
+                  <h5 class="card-width">Ширина: 1.06 м</h5>
+                  <h3 class="card-price">1800 Р</h3>
+                  <button>Купить</button>
+               </div>
+               
+               <div class="card">
+               <img class="card-image" src="https://i.ibb.co/2g4c5rk/1877.png"/>
+                  <p class="card-text">Erismann Erismann (Россия)</p>
+                  <h5 class="card-art">Арт. 4725</h5>
+                  <h5 class="card-width">Ширина: 1.06 м</h5>
+                  <h3 class="card-price">2400 Р</h3>
+                  <button>Купить</button>
+               </div> 
+               
+               <div class="card">
+                  <img class="card-image" src="https://i.ibb.co/zNd0mKT/1876.png"/>
+                  <p class="card-text">Zambaiti Parati Melodia (Италия)</p>
+                  <h5 class="card-art">Арт. 4245</h5>
+                  <h5 class="card-width">Ширина: 1.06 м</h5>
+                  <h3 class="card-price">999 Р</h3>
+                  <button>Купить</button>
+               </div> 
+               
+               <div class="card">
+                  <img class="card-image" src="https://i.ibb.co/HVpqLbS/1875.png" />         
+                  <p class="card-text">Zambaiti Parati Melodia (Италия)</p>
+                  <h5 class="card-art">Арт. 4443</h5>
+                  <h5 class="card-width">Ширина: 1.06 м</h5>
+                  <h3 class="card-price">999 Р</h3>
+                  <button>Купить</button>
+               </div>
+     
+             </section>
+
+       </div>
+            <footer class="footer">
+               <div class="footer-content">
+                  <h4 class="footer-author">Мир Обоев © 2023. All Rights Reserved</h4>
+                  <a class="email" href="mailto:makleo2002@gmail.com">Email: makleo2002@gmail.com</a>
+               </div>
+            </footer>
+  </body>
+</html>
